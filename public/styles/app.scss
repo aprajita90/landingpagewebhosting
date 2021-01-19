@@ -1,0 +1,29 @@
+body{
+    margin:1;
+    padding: 1;
+    font-family: "Lato",sans-serif;
+    background-color: #f1f1f1;
+}
+.sidebar {
+    margin: 1;
+    padding: 1;
+    border-radius: 5px;
+    width: 200px;
+    background-color:white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+h3{
+   margin: 2px;
+   padding: 5px; 
+   text-align:left;
+}
+h5{
+    text-align: center;
+    border-inline-color: #f1f1f1;
+    text-decoration: underline;
+}
+a{
+    background-color:greenyellow;
+}
