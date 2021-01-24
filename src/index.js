@@ -1,17 +1,9 @@
 
 
-//alert("hi user");
 
-
-//const app1 = require('/public/styles/app.scss');
 const express = require('express');
 const app = express();
 const path = require('path');
-//const http = require('http');
-//const req = Object.create(http.IncomingMessage.prototype)
-//const less = require('express-less');
-//const RedisStore = require('connect-redis')(express);
-//const {ipcRenderer} = require('electron')
 const port = process.env.PORT||8081;
 
 //dist static path

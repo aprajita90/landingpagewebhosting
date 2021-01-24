@@ -9,12 +9,12 @@ const myAccFunc = async()=>{
            .then((elements)=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {  
-                   logo.innerHTML += `<img src="${array[index] = item.links.mission_patch_small}" width="250px" height="250px" />
-                   <p>${array[index]=item.mission_name}</p>
+                   logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
+                   <p># ${array[index]=item.mission_name}</p>
                    <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
                    <p>Launch Year: ${array[index]=item.launch_year}</p>
                    <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                   <p> Successful Landing: ${array[index]=item.launch_success}</p>`             
+                   <p> Successful Landing: ${array[index]=item.launch_success}</p></div>`            
                });           
            });
     }catch(err){
@@ -29,7 +29,7 @@ const successfulLaunch = async()=>{
            .then((elements)=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {   
-                   logo.innerHTML += `<div><img src="${array[index] = item.links.mission_patch_small}" width="250px" height="250px" />
+                   logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
                    <p># ${array[index]=item.mission_name}</p>
                    <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
                    <p>Launch Year: ${array[index]=item.launch_year}</p>
@@ -50,12 +50,12 @@ const successfulLanding = async()=>{
            .then((elements)=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {   
-                   logo.innerHTML += `<img src="${array[index] = item.links.mission_patch_small}" width="250px" height="250px" />
+                   logo.innerHTML += `<div class="boxcolor"><div class="imgcolor" ><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
                    <p>${array[index]=item.mission_name}</p>
                    <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
                    <p>Launch Year: ${array[index]=item.launch_year}</p>
                    <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                   <p> Successful Landing: ${array[index]=item.launch_success}</p>`             
+                   <p> Successful Landing: ${array[index]=item.launch_success}</p></div>`             
                });
             
            });
@@ -73,12 +73,12 @@ const unSuccessfulLaunch = async()=>{
             logo.innerHTML = "";
             elements.forEach((item, index,array) => {  
                 if((array[index]=item.launch_success) == false){
-                logo.innerHTML += `<img src="${array[index] = item.links.mission_patch_small}" width="250px" height="250px" />
+                logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
                 <p>${array[index]=item.mission_name}</p>
                 <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
                 <p>Launch Year: ${array[index]=item.launch_year}</p>
                 <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                <p> Successful Landing: ${array[index]=item.launch_success}</p>` 
+                <p> Successful Landing: ${array[index]=item.launch_success}</p></div>` 
                 }            
             });
          
@@ -87,4 +87,5 @@ const unSuccessfulLaunch = async()=>{
      alert(err);
  }
 }
+
 
