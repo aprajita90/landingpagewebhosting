@@ -2,14 +2,8 @@
 
 //alert("hi user");
 
-// console.log("Building webpack");
 
-// fetch("https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true")
-// .then((response) => {    
-// console.log("API: ", response.json());
-// })
-// .catch();
-const app1 = require('../public/styles/app.scss');
+//const app1 = require('/public/styles/app.scss');
 const express = require('express');
 const app = express();
 const path = require('path');

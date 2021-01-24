@@ -31,7 +31,7 @@ module.exports = {
       },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'main.[hash].js',
+        filename: 'main.js',
         chunkLoading: false,
         wasmLoading: false
     },
@@ -87,8 +87,8 @@ module.exports = {
             filename: "../index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].[hash].css",
-            chunkFilename: "[id].[hash].css"
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         }),
         new webpack.ProvidePlugin({
             process: 'process/browser',
