@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="/public/styles/app.css"/>
 </head>
 <body>
-    <div><h1>SpaceX Launch Programs</h1></div></br>
+    <nav>
+    <div><h2>SpaceX Launch Programs</h2></div>
+    </nav>
     <div class="sidebar">   
         <h3>Filters</h3>
         <p class="heading">Launch Year</p>
@@ -30,11 +32,13 @@
         <p class="heading">Successful Landing</p>
         <a href="#" class="button" onclick="successfulLanding()">True</a>
         <a href="#" class="button" onclick="unSuccessfulLaunch()">False</a>
-    </div></br>
-    <div style="margin-left:14%">
-    <div id = "logo"></div>
     </div>
-    <footer>Developer by:</footer>   
+    <div class = "partition">
+    <div id = "logo" ></div>
+    </div>
+    <footer>
+        Developer by:
+    </footer> 
     <script type="text/javascript" src="/public/js/landing.js"></script>
     <!-- <script type="text/javascript" src="/dist/main.js"></script> -->
 </body>

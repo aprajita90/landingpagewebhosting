@@ -9,12 +9,13 @@ const myAccFunc = async()=>{
            .then((elements)=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {  
+                   console.log(item);
                    logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
-                   <p># ${array[index]=item.mission_name}</p>
-                   <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
-                   <p>Launch Year: ${array[index]=item.launch_year}</p>
-                   <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                   <p> Successful Landing: ${array[index]=item.launch_success}</p></div>`            
+                   <p class="csize">${array[index]=item.mission_name}<strong> #</strong>${array[index]=item.flight_number}</p>
+                   <p class="csize"><strong><span style="color:black">Mission_Ids: </span></strong>${innerText=array[index]=item.mission_id}</p>
+                   <p class="csize"><strong><span style="color:black">Launch Year: </span></strong>${array[index]=item.launch_year}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Launch: </span></strong>${array[index]=item.launch_success}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Landing: </span></strong>${array[index]=item.launch_success}</p></div>`            
                });           
            });
     }catch(err){
@@ -30,11 +31,11 @@ const successfulLaunch = async()=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {   
                    logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
-                   <p># ${array[index]=item.mission_name}</p>
-                   <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
-                   <p>Launch Year: ${array[index]=item.launch_year}</p>
-                   <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                   <p> Successful Landing: ${array[index]=item.launch_success}</p></div>`             
+                   <p class="csize">${array[index]=item.mission_name}<strong> #</strong>${array[index]=item.flight_number}</p>
+                   <p class="csize"><strong><span style="color:black">Mission_Ids: </span></strong>${innerText=array[index]=item.mission_id}</p>
+                   <p class="csize"><strong><span style="color:black">Launch Year: </span></strong>${array[index]=item.launch_year}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Launch: </span></strong>${array[index]=item.launch_success}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Landing: </span></strong>${array[index]=item.launch_success}</p></div>`             
                });
            });
     }catch(err){
@@ -51,11 +52,11 @@ const successfulLanding = async()=>{
                logo.innerHTML = "";
                elements.forEach((item, index,array) => {   
                    logo.innerHTML += `<div class="boxcolor"><div class="imgcolor" ><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
-                   <p>${array[index]=item.mission_name}</p>
-                   <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
-                   <p>Launch Year: ${array[index]=item.launch_year}</p>
-                   <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                   <p> Successful Landing: ${array[index]=item.launch_success}</p></div>`             
+                   <p class="csize">${array[index]=item.mission_name}<strong> #</strong>${array[index]=item.flight_number}</p>
+                   <p class="csize"><strong><span style="color:black">Mission_Ids: </span></strong>${innerText=array[index]=item.mission_id}</p>
+                   <p class="csize"><strong><span style="color:black">Launch Year: </span></strong>${array[index]=item.launch_year}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Launch: </span></strong>${array[index]=item.launch_success}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Landing: </span></strong>${array[index]=item.launch_success}</p></div>`             
                });
             
            });
@@ -74,11 +75,11 @@ const unSuccessfulLaunch = async()=>{
             elements.forEach((item, index,array) => {  
                 if((array[index]=item.launch_success) == false){
                 logo.innerHTML += `<div class="boxcolor"><div class="imgcolor"><img src="${array[index] = item.links.mission_patch_small}" width="180px" height="180px" /></div>
-                <p>${array[index]=item.mission_name}</p>
-                <p>Mission_Ids: ${innerText=array[index]=item.mission_id}</p>
-                <p>Launch Year: ${array[index]=item.launch_year}</p>
-                <p> Successful Launch: ${array[index]=item.launch_success}</p>
-                <p> Successful Landing: ${array[index]=item.launch_success}</p></div>` 
+                <p class="csize">${array[index]=item.mission_name}<strong> #</strong>${array[index]=item.flight_number}</p>
+                   <p class="csize"><strong><span style="color:black">Mission_Ids: </span></strong>${innerText=array[index]=item.mission_id}</p>
+                   <p class="csize"><strong><span style="color:black">Launch Year: </span></strong>${array[index]=item.launch_year}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Launch: </span></strong>${array[index]=item.launch_success}</p>
+                   <p class="csize"><strong><span style="color:black">Successful Landing: </span></strong>${array[index]=item.launch_success}</p></div>` 
                 }            
             });
          

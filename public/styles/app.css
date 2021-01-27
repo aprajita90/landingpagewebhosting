@@ -1,12 +1,21 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    margin:1px;
-    padding: 1px;
+    margin: 0;
     font-family: "Lato",sans-serif;
     background-color: #f1f1f1;
 }
+nav{
+    margin: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    width: 100%;
+    overflow: auto;
+}
 .sidebar {
-    margin: 1px;
-    padding: 1px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 5px;
     width: 200px;
     background-color:white;
@@ -14,13 +23,17 @@ body{
     height: 80%;
     overflow: auto;
 }
+.csize{
+    color:#00a2ff;
+    font-size: 11px; 
+}
 h3{
    margin: 2px;
-   padding: 5px; 
+   padding: 2px; 
    text-align:left;
 }
 .heading{
-    padding: -2px;
+    /* padding: -2px; */
     text-align: center;
     border-inline-color: #f1f1f1;
     font-size: 16px;
@@ -52,11 +65,14 @@ a{
     display: inline-block;
     font-size: 15px;
 }
+.partition{
+    margin-left:10%;
+}
 #logo {
-    margin: 1px;
-    padding: 1px;
-    display: flex; 
-    /* box-sizing: border-box; */
+    max-width: 1200Px;
+    margin: auto;
+    overflow: auto;
+    background-color: #f1f1f1;
 }
 .imgcolor {
     margin: 5px;
@@ -67,17 +83,77 @@ a{
     margin: 5px;
     padding: 5px;
     background-color:white;
-    width:15%;
-    height:15%;
+    float: left;
+    width: 250px; 
+}
+footer{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f1f1f1;
+    color:black;
+    font-family: Arial;
+    letter-spacing: 1px;
 }
 
- /* @media (min-width: 1024px) and (max-width:1040px) {
-     /* For mobile phones: */ 
-    /* #logo{
-        display:block;
-        /* box-sizing: border-box; */
-    /* }  
- }  
- @media (min-width: 0px) and (max-width:700px) {
-    
-}   */ 
+@media (min-width: 1024px) and (max-width:1440px) {
+    .sidebar{
+        margin: auto;
+        position:fixed;
+        /* width:80%; */
+     }
+     .partition{
+        margin-left:auto;
+    }
+    #logo {
+        max-width: 1200Px;
+        margin: auto;
+        overflow: auto;
+        background-color: #f1f1f1;
+        float:none;
+    }    
+    .boxcolor{
+        margin: auto;
+        overflow: auto;
+        width: 200px;    
+    }
+}  
+@media (min-width:700px) and (max-width:1024px) {
+    .sidebar{
+        margin: auto;
+        position:unset;
+        /* width:80%; */
+     }
+     .partition{
+        margin-left:auto;
+    }
+    #logo {
+        /* max-width: 1200Px; */
+        margin: auto;
+        overflow: auto;
+        background-color: #f1f1f1;
+        float:none;
+    }  
+}  
+ @media (max-width:700px) {
+     .sidebar{
+        margin: auto;
+        position:unset;
+        /* width:75%; */
+     }
+     .partition{
+        margin-left:unset;
+        float:left;
+    }
+    #logo {
+        max-width: 1200Px;
+        margin: auto;
+        overflow: auto;
+        background-color: #f1f1f1;
+        float:none;
+    }    
+    .boxcolor{
+        width: 80%;   
+    }
+}    
