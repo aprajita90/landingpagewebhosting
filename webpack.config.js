@@ -5,19 +5,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
-//var nodeExternals = require('webpack-node-externals');
-
 module.exports = {
     entry: './src/index.js',
     target: "web",
-    node: {
-        // fs: 'empty',
-        // module: 'empty',
-        // net: 'empty',
-        // global: false,
-        // __filename: false,
-        // __dirname: false
-     },
      resolve: {
         fallback: {
           fs: false,
@@ -35,11 +25,6 @@ module.exports = {
         chunkLoading: false,
         wasmLoading: false
     },
-    //target:'node',
-    // externals: [nodeExtenals()],
-    
-    //mode: "development",
-    //externals: ["fs"],
     module: {
         rules:[
             { test: /\.glsl$/, 

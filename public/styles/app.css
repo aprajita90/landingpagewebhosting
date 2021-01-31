@@ -66,7 +66,7 @@ a{
     font-size: 15px;
 }
 .partition{
-    margin-left:10%;
+    margin-left:0%;
 }
 #logo {
     max-width: 1200Px;
@@ -122,7 +122,7 @@ footer{
 @media (min-width:700px) and (max-width:1024px) {
     .sidebar{
         margin: auto;
-        position:unset;
+        position:fixed;
         /* width:80%; */
      }
      .partition{
