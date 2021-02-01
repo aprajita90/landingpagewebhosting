@@ -1,5 +1,7 @@
 
 const express = require('express');
+//const app1 = require('../public/styles/app.css');
+const landing = require('../public/js/landing');
 const app = express();
 const path = require('path');
 const port = process.env.PORT||8081;
